@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EditMe | HR Attendance System</title>
+<meta name="description" content="ระบบ Check In - Check Out และ Request OT ผ่าน LINE LIFF โดย EditMe">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#0756c9;--navy:#08275e;--orange:#ff7a00;--line:#06c755;--bg:#f5f9ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Prompt,sans-serif;color:#11294e;background:var(--bg)}
+a{text-decoration:none;color:inherit}.nav{height:74px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10;background:#fffffff2;backdrop-filter:blur(15px);border-bottom:1px solid #e7eef9}
+.logo{font-size:27px;font-weight:800;color:var(--blue)}.logo span{color:var(--orange)}nav{display:flex;gap:26px;font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:14px;padding:13px 22px;background:linear-gradient(135deg,#0871ef,#0645aa);color:#fff;font-weight:600;box-shadow:0 12px 28px #0756c92b}
+.btn.line{background:var(--line)}.hero{min-height:650px;padding:65px 7vw;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:4vw;background:radial-gradient(circle at 85% 20%,#d6e9ff,transparent 35%),#fff}
+.badge{display:inline-block;background:#e8f2ff;color:var(--blue);padding:7px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:1px}.hero h1{font-size:clamp(42px,5vw,70px);line-height:1.08;margin:18px 0}.hero h1 span{color:var(--orange)}.hero p{font-size:17px;line-height:1.85;color:#60728d;max-width:680px}.actions{display:flex;gap:12px;margin-top:28px}.hero-img img{width:100%;border-radius:28px;box-shadow:0 35px 70px #123b6d24}.section{padding:85px 7vw}.section h2{font-size:clamp(30px,4vw,48px);margin:12px 0 35px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #e3ebf7;border-radius:24px;padding:30px;box-shadow:0 18px 40px #163c6b0c}.icon{width:55px;height:55px;border-radius:16px;background:#e5f0ff;color:var(--blue);display:grid;place-items:center;font-size:20px;font-weight:800}.card:nth-child(2) .icon{background:#fff0e1;color:var(--orange)}.card p{color:#697990;line-height:1.75}.preview{background:#071f49;color:white}.preview-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:45px;align-items:center}.preview p{color:#b9c9dd;line-height:1.85}.preview img{width:100%;border-radius:25px;box-shadow:0 25px 60px #0006}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{background:#fff;border-radius:22px;padding:25px;border:1px solid #e3ebf7}.step b{font-size:32px;color:var(--orange)}.step p{color:#697990}.contact{padding:80px 7vw;background:linear-gradient(135deg,#075bcf,#05275f);color:white}.contact-wrap{display:grid;grid-template-columns:1fr 380px;gap:50px;align-items:center}.contact h2{font-size:clamp(34px,4vw,50px);margin:10px 0}.contact p{color:#d5e3f6;line-height:1.8}.qr{background:#fff;color:#11294e;border-radius:25px;padding:28px;text-align:center}.qr img{width:190px;max-width:100%;image-rendering:auto}.qr h3{margin-bottom:6px}.qr p{color:#6d7b8e;font-size:13px}.qr .btn{width:100%;margin-top:10px}.note{font-size:11px;color:#8794a5!important}footer{background:#03152f;color:#aebdd1;padding:30px 7vw;display:flex;justify-content:space-between;font-size:13px}
+@media(max-width:850px){nav{display:none}.hero,.preview-grid,.contact-wrap{grid-template-columns:1fr}.hero-img{order:-1}.features,.steps{grid-template-columns:1fr 1fr}.qr{max-width:420px}.hero{padding-top:35px}}
+@media(max-width:560px){.nav{padding:0 5vw}.nav>.btn{display:none}.hero,.section,.contact{padding-left:5vw;padding-right:5vw}.hero h1{font-size:40px}.features,.steps{grid-template-columns:1fr}.actions{flex-direction:column}footer{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#home">Edit<span>Me</span></a>
+  <nav><a href="#features">ฟังก์ชัน</a><a href="#preview">ตัวอย่างระบบ</a><a href="#how">วิธีใช้งาน</a><a href="#contact">ติดต่อ</a></nav>
+  <a class="btn line" href="#contact">LINE OA</a>
+</header>
+
+<section class="hero" id="home">
+ <div>
+  <div class="badge">HR ATTENDANCE • LINE LIFF</div>
+  <h1>Check In - Check Out<br>และ <span>Request OT</span><br>ผ่าน LINE</h1>
+  <p>ระบบลงเวลาทำงานสำหรับองค์กรยุคใหม่ ใช้งานผ่าน LINE LIFF ไม่ต้องติดตั้งแอปเพิ่ม รองรับการเช็คอิน เช็คเอาท์ ขอทำงานล่วงเวลา และตรวจสอบประวัติการทำงาน</p>
+  <div class="actions"><a class="btn" href="#preview">ดูตัวอย่างระบบ</a><a class="btn line" href="#contact">สนใจติดต่อ LINE OA</a></div>
+ </div>
+ <div class="hero-img"><img src="assets/editme-hr-preview.png" alt="EditMe HR Attendance 3D Preview"></div>
+</section>
+
+<section class="section" id="features">
+ <div class="badge">FEATURES</div><h2>ฟังก์ชันหลักของระบบ</h2>
+ <div class="features">
+  <div class="card"><div class="icon">◷</div><h3>Check In / Check Out</h3><p>พนักงานบันทึกเวลาเข้าและออกงานผ่านมือถือ พร้อมแสดงเวลาและสถานะการทำงานอย่างชัดเจน</p></div>
+  <div class="card"><div class="icon">OT</div><h3>Request OT</h3><p>ส่งคำขอทำงานล่วงเวลา ระบุวันที่ เวลา เหตุผล และรองรับการแนบเอกสารเพื่อเข้าสู่ขั้นตอนอนุมัติ</p></div>
+  <div class="card"><div class="icon">▥</div><h3>Work History</h3><p>ดูประวัติการลงเวลาและรายการ OT ย้อนหลัง ช่วยให้พนักงานและ HR ตรวจสอบข้อมูลได้ง่ายขึ้น</p></div>
+ </div>
+</section>
+
+<section class="section preview" id="preview">
+ <div class="preview-grid">
+  <div><div class="badge">3D LIFF DEMO</div><h2>ตัวอย่างหน้าจอสำหรับนำเสนอลูกค้า</h2><p>ออกแบบให้ภาพลักษณ์ EditMe ดูทันสมัยและเป็นมิตร ด้วยตัวละคร 3D พร้อมตัวอย่างหน้า Home, Check In / Check Out, Request OT, History และข้อมูลพนักงาน</p><p>ลูกค้าสามารถเห็นภาพการใช้งานจริงตั้งแต่เปิด LINE OA จนถึงการทำรายการผ่าน LIFF ได้ทันที</p></div>
+  <img src="assets/editme-hr-preview.png" alt="ตัวอย่างการใช้งาน EditMe HR System">
+ </div>
+</section>
+
+<section class="section" id="how">
+ <div class="badge">HOW IT WORKS</div><h2>ใช้งานง่ายเพียง 4 ขั้นตอน</h2>
+ <div class="steps">
+  <div class="step"><b>01</b><h3>เพิ่มเพื่อน LINE OA</h3><p>สแกน QR Code เพื่อเพิ่มบัญชี LINE Official Account</p></div>
+  <div class="step"><b>02</b><h3>เปิด HR System</h3><p>แตะ Rich Menu เพื่อเข้าสู่หน้า LIFF ของระบบ</p></div>
+  <div class="step"><b>03</b><h3>ทำรายการ</h3><p>Check In, Check Out หรือส่ง Request OT จากมือถือ</p></div>
+  <div class="step"><b>04</b><h3>ดูประวัติ</h3><p>ตรวจสอบข้อมูลและประวัติการทำงานย้อนหลังได้สะดวก</p></div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="contact-wrap">
+  <div><div class="badge">CONTACT EDITME</div><h2>สนใจระบบสำหรับองค์กรของคุณ?</h2><p>สามารถปรับ Logo, สี, เมนู, Workflow การอนุมัติ และฟังก์ชันเพิ่มเติมให้เหมาะกับแต่ละบริษัทได้ สแกน QR Code เพื่อติดต่อ EditMe ผ่าน LINE OA</p></div>
+  <div class="qr"><img src="assets/line-oa-qr.jpg" alt="LINE OA QR Code"><h3>ติดต่อผ่าน LINE OA</h3><p>สแกน QR Code เพื่อเพิ่มเพื่อนและสอบถามรายละเอียด</p><a class="btn line" href="assets/line-oa-qr.jpg">ดู QR Code</a><p class="note">สามารถเปลี่ยนปุ่มนี้เป็น Add Friend URL ของ LINE OA ภายหลังได้</p></div>
+ </div>
+</section>
+
+<footer><strong>EditMe • HR Attendance System</strong><span>Check In • Check Out • Request OT • LINE LIFF</span><span>© 2026 EditMe</span></footer>
+</body>
+</html>
